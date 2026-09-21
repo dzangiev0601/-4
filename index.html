@@ -7,39 +7,93 @@
 </head>
 <body>
     <script>
-        // Условные операторы
+        // // Условные операторы
 
-        console.log(2 > 1); // true
-        console.log(3 > 5); // false
-        console.log(2 == 2); // true
-        console.log(2 == 1); // false
+        // console.log(2 > 1); // true
+        // console.log(3 > 5); // false
+        // console.log(2 == 2); // true
+        // console.log(2 == 1); // false
 
-        let result = 2 > 1;
-        console.log(result);
-
-
-        //Сравнение строк
-        console.log("А" > "Б"); // FALSE
-        console.log("я" > "к"); // true
-        console.log("Сон" > "Сок"); // true
-
-        console.log("абв" > "абг"); // false
-
-        console.log("К" == "к"); // false
-        console.log("К" == "K"); // false
+        // let result = 2 > 1;
+        // console.log(result);
 
 
+        // //Сравнение строк
+        // console.log("А" > "Б"); // FALSE
+        // console.log("я" > "к"); // true
+        // console.log("Сон" > "Сок"); // true
 
-        //Сравнение разных типов
+        // console.log("абв" > "абг"); // false
 
-        console.log("2" > 1); // true
-        console.log("2" > "1"); // true
+        // console.log("К" == "к"); // false
+        // console.log("К" == "K"); // false
 
-        console.log("01" > 1); // false
-        console.log("01" == 1); // true
 
-        console.log(true == 1); // true
-        console.log(false == 0); // true
+
+        // //Сравнение разных типов
+
+        // console.log("2" > 1); // true
+        // console.log("2" > "1"); // true
+
+        // console.log("01" > 1); // false
+        // console.log("01" == 1); // true
+
+        // console.log(true == 1); // true
+        // console.log(false == 0); // true
+
+        // не строгое сравнение (==)
+        console.log(1 == 1);// true
+        console.log(1 == "1");// true
+        console.log(1 == "2");// false
+        console.log(false == "0");// true
+        console.log("a" == "a");// true
+        console.log("a" == "ab");// false
+
+        // строгое сравнение
+        console.log(1 === 1);// true
+        console.log(1 === "1");// false
+        console.log("abc" === true);// false
+        console.log(1 === true);// false
+
+
+        // логические операторы
+        // || , | (или)
+        console.log(true || true);// true
+        console.log(1 || true);// 1
+        console.log(0 || 1 || true);// 1
+        console.log(0 || false || NaN || 1 || "");// 1
+        console.log(false || false);
+        console.log(null || 1 || "2");// 1
+        console.log(undefined || null || NaN || 0);// 0
+
+
+        // && , & (И)
+        console.log(1 && true);// true
+        console.log(1 && true && "A" && null && 2);// null
+        console.log("abc" && 1 && true && 123);// 123
+
+        // ! (НЕ)
+        console.log(!true);// false
+        console.log(!0);// true
+        console.log(!null);// true
+
+
+        // !! (НЕ НЕ)
+
+        let year = prompt('В каком году была опубликована спецификация ECMAScript-2015?', '');
+        /* инструкция prompt выведет всплывающее окно с вопросом 'В каком году была опубликована спецификация ECMAScript-2015?' и возможностью ввести ответ при открытии страницы */
+        if (year == 2015){
+         alert( 'Вы правы!' );
+        }
+        // инструкция alert выведет всплывающее окно с текстом ‘Вы правы!’
+
+
+
+
+
+
+
+
 
 
 
